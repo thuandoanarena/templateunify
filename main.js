@@ -191,30 +191,30 @@ function closeModal(modal) {
   overlay.classList.remove("active");
 }
 // parallax
-var heading = $("#heading");
+let heading = $("#heading");
 
-var desc = $("#desc");
-var button = $("#buttons");
+let desc = $("#desc");
+let button = $("#buttons");
 
-var layer = $("#main");
+let layer = $("#main");
 
-var heading2 = $("#heading-2");
+let heading2 = $("#heading-2");
 
-var desc2 = $("#desc-2");
+let desc2 = $("#desc-2");
 
-var button2 = $("#buttons-2");
+let button2 = $("#buttons-2");
 
-var heading3 = $("#heading-3");
+let heading3 = $("#heading-3");
 
-var desc3 = $("#desc-3");
+let desc3 = $("#desc-3");
 
-var button3 = $("#buttons-3");
+let button3 = $("#buttons-3");
 
 layer.mousemove(function (e) {
-  var ivalueX = (e.pageX * -1) / 20;
-  var ivalueY = (e.pageY * -1) / 10;
-  var cvalueX = (e.pageX * -1) / 30;
-  var cvalueY = (e.pageY * -1) / 20;
+  let ivalueX = (e.pageX * -1) / 20;
+  let ivalueY = (e.pageY * -1) / 10;
+  let cvalueX = (e.pageX * -1) / 30;
+  let cvalueY = (e.pageY * -1) / 20;
   heading.css(
     "transform",
     "translate3d(" + ivalueX + "px," + ivalueY + "px, 0)"
