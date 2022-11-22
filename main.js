@@ -1,3 +1,4 @@
+// Menu mobile
 const menu = document.querySelector(".nav__links");
 
 const menuButton = document.getElementById("mobile-menu");
