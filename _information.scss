@@ -1,0 +1,127 @@
+.information {
+  text-align: center;
+  margin-bottom: 7rem;
+  &__desc {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-top: 6.6rem;
+    margin-bottom: 1.5rem;
+    color: $secondary-color;
+  }
+  &__line {
+    width: 7rem;
+    border: 1px solid #8b8b8b;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    color: $secondary-color;
+    margin-bottom: 7.5rem;
+  }
+  &__list {
+    display: flex;
+    gap: 4rem;
+    text-align: left;
+  }
+  &__line {
+    width: 7rem;
+    margin-top: 1.5rem;
+  }
+  &__content h3 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  &__content h4 {
+    font-size: 1.1rem;
+    color: #8b8b8b;
+    padding-top: 0.5rem;
+  }
+  &__content p {
+    font-size: 1.1rem;
+    margin-top: -2rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .information {
+    &__list {
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 0;
+    }
+    &__content p {
+      margin-bottom: 3rem;
+    }
+    &__line {
+      margin-top: 1rem;
+    }
+    &__content {
+      width: 50%;
+    }
+    &__content img {
+      width: 80%;
+      object-fit: cover;
+    }
+    &__text {
+      margin-bottom: 5rem;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .information {
+    margin-bottom: 2rem;
+    &__list {
+      flex-wrap: wrap;
+      text-align: center;
+      gap: 0;
+    }
+    &__content p {
+      width: 75%;
+      padding-left: 4.3rem;
+      margin-bottom: 3rem;
+    }
+    &__line {
+      margin-top: 1rem;
+    }
+    &__content img {
+      width: 90%;
+    }
+    &__desc {
+      margin-top: 5rem;
+    }
+    &__text {
+      margin-bottom: 5rem;
+      width: 90%;
+      margin-left: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .information {
+    &__text {
+      width: 90%;
+      padding-left: 2rem;
+      margin-bottom: 4rem;
+    }
+    &__desc {
+      margin-bottom: 0;
+      margin-top: 4rem;
+    }
+    &__line {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    &__list {
+      display: block;
+      text-align: center;
+    }
+    &__content h3 {
+      padding-top: 1rem;
+    }
+    &__content {
+      margin-bottom: 4rem;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.blocks {
+  &__content {
+    text-align: center;
+  }
+  &__desc {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-top: 6.6rem;
+    margin-bottom: 1.5rem;
+    color: $secondary-color;
+  }
+  &__line {
+    width: 7rem;
+    border: 1px solid #555555;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    color: $secondary-color;
+    margin-bottom: 7.5rem;
+  }
+  &__features {
+    display: flex;
+    gap: 7rem;
+  }
+  &__features-item h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $secondary-color;
+    padding-bottom: 2.5rem;
+  }
+  &__features-desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+  &__features-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .blocks {
+    &__features {
+      gap: 3rem;
+    }
+    &__features-item {
+      width: 27%;
+      padding-left: 3rem;
+    }
+    &__text {
+      margin-bottom: 5rem;
+      width: 90%;
+      padding-left: 4rem;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .blocks {
+    &__features {
+      flex-direction: column;
+    }
+    &__features-text {
+      margin-bottom: -2rem;
+    }
+    &__features-item {
+      width: 80%;
+      padding-left: 2rem;
+    }
+    &__text {
+      margin-bottom: 3rem;
+      width: 90%;
+      padding-left: 3rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .blocks {
+    &__text {
+      margin-bottom: 4rem;
+    }
+    &__features {
+      flex-direction: column;
+      padding-left: 1rem;
+      width: 95%;
+      margin-bottom: 5rem;
+      gap: 6rem;
+    }
+    &__features-item {
+      padding-left: 1rem;
+    }
+    &__features-text {
+      margin-bottom: -2rem;
+    }
+    &__text {
+      width: 90%;
+      padding-left: 2rem;
+    }
+    &__desc {
+      margin-top: 5rem;
+    }
+  }
+  .blocks__features-item h3 {
+    padding-bottom: 1rem;
+  }
+}

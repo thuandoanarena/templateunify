@@ -1,0 +1,122 @@
+.footer {
+  background-color: #272727;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  color: #fff;
+  &__main {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 24rem;
+  }
+  &__content {
+    padding-top: 2rem;
+  }
+  &__logo h3 {
+    font-size: 1.4rem;
+    padding-top: 2.3rem;
+    padding-bottom: 2rem;
+  }
+  &__logo p {
+    font-size: 1.4rem;
+  }
+  &__posts h3 {
+    font-size: 2.2rem;
+  }
+  &__useful h3 {
+    font-size: 2.2rem;
+  }
+  &__contact h3 {
+    font-size: 2.2rem;
+  }
+  &__content h4 {
+    font-size: 1.4rem;
+  }
+  &__content p {
+    font-size: 1.1rem;
+  }
+  &-links {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #fff;
+  }
+  &-info {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+  }
+  &-text {
+    margin-top: 2rem;
+  }
+  &-item {
+    margin-top: 2rem;
+  }
+  &__contact {
+    background-image: url(./Images/Layer\ 62.png);
+    background-size: cover;
+  }
+  &__desc {
+    padding: 3rem 0;
+  }
+  &__desc h3 {
+    font-size: 1.2rem;
+  }
+  &__follow {
+    margin-top: 4rem;
+    background-color: #222222;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .footer {
+    margin-bottom: 0;
+    &__main {
+      justify-content: space-around;
+    }
+    &__desc {
+      padding-left: 5rem;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .footer {
+    &__main {
+      display: block;
+      padding-left: 4rem;
+    }
+    &__posts {
+      margin-top: 4rem;
+    }
+    &__useful {
+      margin-top: 4rem;
+    }
+    &__contact {
+      margin-top: 4rem;
+    }
+    &__desc {
+      padding-left: 4rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    &__main {
+      display: block;
+      padding-left: 2rem;
+    }
+    &__posts {
+      margin-top: 4rem;
+    }
+    &__useful {
+      margin-top: 4rem;
+    }
+    &__contact {
+      margin-top: 4rem;
+    }
+    &__desc {
+      padding-left: 2rem;
+    }
+  }
+}

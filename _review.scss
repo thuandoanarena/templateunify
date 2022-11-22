@@ -1,0 +1,107 @@
+.reviews {
+  background-color: #f7f7f7;
+}
+.review {
+  display: flex;
+  gap: 3rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  &__desc {
+    font-size: 1.4rem;
+    &.desc2 {
+      padding-top: 2.5rem;
+      padding-bottom: 4rem;
+    }
+  }
+}
+.review__button .btn--border {
+  cursor: pointer;
+  color: $secondary-color;
+  border: 1px solid $secondary-color;
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  margin-right: 1rem;
+}
+
+.review__button .btn--primary {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  color: #fff;
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .review {
+    &__content {
+      width: 40%;
+      padding-right: 2rem;
+      padding-left: 4rem;
+    }
+    &__button {
+      margin-left: 6rem;
+    }
+    &__map {
+      width: 50vw;
+    }
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .review {
+    padding-bottom: 3rem;
+    margin-top: 6rem;
+    display: block;
+    &__img img {
+      width: 95%;
+      padding-left: 2rem;
+    }
+    &__title {
+      margin-top: 0;
+    }
+    &__content {
+      width: 90%;
+      padding-left: 3rem;
+      margin-top: -3rem;
+      margin-bottom: 5rem;
+    }
+    &__map {
+      width: 100%;
+    }
+  }
+  .review__button .btn--border,
+  .review__button .btn--primary {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .review {
+    padding-bottom: 1rem;
+    padding-top: 5rem;
+    display: block;
+    &__img img {
+      width: 95%;
+      padding-left: 1rem;
+    }
+    &__title {
+      padding-top: 6rem;
+    }
+    &__content {
+      width: 90%;
+      padding-left: 2rem;
+      margin-top: -4rem;
+      margin-bottom: 5rem;
+    }
+    &__map {
+      width: 100%;
+    }
+  }
+  .review__button .btn--border,
+  .review__button .btn--primary {
+    font-size: 1.2rem;
+  }
+}

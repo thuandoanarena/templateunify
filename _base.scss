@@ -1,0 +1,72 @@
+$primary-color: #74c52c;
+$secondary-color: #333333;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Opensans", sans-serif;
+  line-height: 1.4;
+  color: $secondary-color;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 400;
+  font-size: 1.8rem;
+  padding: 2rem 3rem;
+  border: 1px solid #fff;
+  margin-top: 5rem;
+}
+.btn--border {
+  margin-right: 2.5rem;
+}
+.btn--primary {
+  background-color: $primary-color;
+  border: none;
+}
+span {
+  color: $primary-color;
+}
+.to-top {
+  background: #74c52c;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 2.5rem;
+    margin-right: -2rem;
+  }
+}

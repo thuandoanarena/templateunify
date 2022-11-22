@@ -1,0 +1,55 @@
+.service {
+  &__item {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 6rem;
+  }
+  &__primary {
+    display: flex;
+    gap: 2rem;
+  }
+  &__img {
+    width: 5rem;
+    height: 5rem;
+  }
+  &__align {
+    text-align: right;
+  }
+  &__content h3 {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+  }
+  &__content p {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .service {
+    &__align {
+      padding-left: 2rem;
+    }
+    &__list {
+      padding-right: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .service {
+    &__primary {
+      flex-direction: column-reverse;
+    }
+    &__list {
+      width: 90%;
+      padding-left: 2rem;
+    }
+    &__img {
+      width: 10%;
+      height: 10%;
+    }
+    &__item {
+      padding-bottom: 5rem;
+    }
+  }
+}
