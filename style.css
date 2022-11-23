@@ -81,33 +81,40 @@ span {
 }
 .header__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.header__inner img {
+.header__logo {
   cursor: pointer;
-  padding-bottom: 2rem;
-  max-width: 100%;
 }
 .header__menu-list {
   display: flex;
-  padding-top: 1rem;
+  margin-top: -4rem;
 }
 .header__menu-item {
-  padding-right: 4rem;
+  padding-right: 3rem;
   text-decoration: none;
 }
 .header__menu-item:hover .header__menu-link {
   color: #74c52c;
 }
+.header__menu-item:hover i {
+  color: #74c52c;
+}
+.header__menu-item:hover .menu__dropdown {
+  display: block;
+  z-index: 99999;
+  padding-bottom: 2rem;
+  margin-left: -2rem;
+}
 .header__menu-link {
   text-decoration: none;
-  color: #555555;
+  color: #687074;
   font-weight: 600;
   font-size: 1.5rem;
 }
 
-#navbar {
-  overflow: hidden;
+.menu__dropdown ul li:hover a {
+  color: #74c52c;
 }
 
 .sticky {
@@ -121,6 +128,35 @@ span {
 
 .sticky + .content {
   padding-top: 12rem;
+}
+
+.fa-search {
+  font-size: 1.5rem;
+  color: #b8b8b8;
+  line-height: 2.2rem;
+}
+
+.fa-chevron-down {
+  padding-left: 1rem;
+}
+
+.menu__dropdown ul li a {
+  text-decoration: none;
+  color: #687074;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+}
+
+.menu__dropdown ul {
+  padding-top: 1.4rem;
+  padding-right: 3rem;
 }
 
 @media (min-width: 1024px) {
@@ -1422,6 +1458,46 @@ span {
   }
   .footer__desc {
     padding-left: 2rem;
+  }
+}
+.top__bar {
+  margin-top: 2rem;
+  margin-bottom: -4rem;
+}
+
+.topbar__list {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  color: #9b9b9b;
+}
+
+.topbar__list .fa-globe,
+.topbar__list h3,
+.topbar__list h4,
+.topbar__list h5,
+.topbar__list h6,
+.topbar__list p {
+  padding-right: 0.6rem;
+}
+
+.topbar__list .fa-globe {
+  margin-top: 0.2rem;
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .top__bar {
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .top__bar {
+    padding-right: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top__bar {
+    padding-right: 1rem;
   }
 }
 
