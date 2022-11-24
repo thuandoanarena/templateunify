@@ -55,7 +55,28 @@
     }
   }
 }
-
+@media (min-width: 1440px) {
+  .partner__img:hover .partner__content {
+    bottom: -1.6rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .partner {
+    &__content h3 {
+      font-size: 1.5rem;
+    }
+    &__line {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    &__content button {
+      margin-top: 1.5rem;
+    }
+  }
+  .partner__img:hover .partner__content {
+    padding-bottom: 3rem;
+  }
+}
 @media (min-width: 740px) and (max-width: 1023px) {
   .partner {
     &__content {

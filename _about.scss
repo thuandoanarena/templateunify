@@ -190,8 +190,23 @@
   }
 }
 
-// @media (min-width: 600px) {
-//   .about .close-button {
-//     margin-right: -43rem;
-//   }
-// }
+@media (min-width: 834px) {
+  .about .close-button {
+    margin-right: -61rem;
+  }
+}
+@media (min-width: 696px) {
+  .about .close-button {
+    margin-right: -50rem;
+  }
+}
+@media (min-width: 664px) {
+  .about .close-button {
+    margin-right: -48rem;
+  }
+}
+@media (min-width: 1024px) {
+  .about .close-button {
+    margin-right: -62rem;
+  }
+}
