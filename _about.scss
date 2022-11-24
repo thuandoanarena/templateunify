@@ -114,7 +114,7 @@
     }
   }
 }
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 760px) and (max-width: 1023px) {
   .about {
     margin: 5rem 0;
     &__text {
@@ -130,8 +130,14 @@
       margin-bottom: 5rem;
     }
     &__img img {
-      width: 98%;
+      width: 100%;
       object-fit: cover;
+    }
+    .close-button {
+      margin-top: -1rem;
+      margin-right: -55rem;
+      padding: 0.1rem 0.7rem;
+      font-size: 2rem;
     }
   }
 }
@@ -168,6 +174,7 @@
     .close-button {
       margin-top: -2rem;
       margin-right: -28rem;
+      margin-bottom: 1rem;
       padding: 0.1rem 0.7rem;
       font-size: 2rem;
     }
@@ -176,3 +183,15 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .about .close-button {
+    margin-right: -26rem;
+  }
+}
+
+// @media (min-width: 600px) {
+//   .about .close-button {
+//     margin-right: -43rem;
+//   }
+// }

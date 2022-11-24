@@ -1,5 +1,5 @@
 $primary-color: #74c52c;
-$secondary-color: #333333;
+$secondary-color: #687074;
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -61,7 +61,6 @@ span {
   pointer-events: auto;
   opacity: 1;
 }
-
 @media screen and (max-width: 767px) {
   .to-top {
     width: 45px;

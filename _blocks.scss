@@ -4,14 +4,14 @@
   }
   &__desc {
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 6.6rem;
     margin-bottom: 1.5rem;
-    color: $secondary-color;
+    color: #687074;
   }
   &__line {
     width: 7rem;
-    border: 1px solid #555555;
+    border: 1px solid #687074;
     display: inline-block;
     margin-bottom: 30px;
   }
@@ -19,7 +19,7 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2;
-    color: $secondary-color;
+    color: #687074;
     margin-bottom: 7.5rem;
   }
   &__features {
@@ -28,19 +28,26 @@
   }
   &__features-item h3 {
     font-size: 1.8rem;
-    font-weight: 400;
-    color: $secondary-color;
+    font-weight: 500;
+    color: #687074;
     padding-bottom: 2.5rem;
   }
   &__features-desc {
     font-size: 1.4rem;
     font-weight: 400;
+    color: #687074;
   }
   &__features-text {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     padding-top: 2rem;
     margin-bottom: 6rem;
+    color: #687074;
+  }
+  &__features-icon {
+    padding-right: 2rem;
+    font-size: 2rem;
+    color: #74c52c;
   }
 }
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -63,6 +70,7 @@
   .blocks {
     &__features {
       flex-direction: column;
+      align-items: center;
     }
     &__features-text {
       margin-bottom: -2rem;
@@ -73,8 +81,8 @@
     }
     &__text {
       margin-bottom: 3rem;
-      width: 90%;
-      padding-left: 3rem;
+      width: 84%;
+      padding-left: 6rem;
     }
   }
 }

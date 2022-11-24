@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Opensans", sans-serif;
   line-height: 1.4;
-  color: #333333;
+  color: #687074;
   overflow-x: hidden;
 }
 
@@ -85,6 +85,7 @@ span {
 }
 .header__logo {
   cursor: pointer;
+  padding-bottom: 0.5rem;
 }
 .header__menu-list {
   display: flex;
@@ -168,6 +169,10 @@ span {
   .header__inner img {
     padding-left: 2rem;
   }
+  .header__logo img {
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+  }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
   .header__inner {
@@ -189,12 +194,17 @@ span {
   }
   .header__icon {
     font-size: 3rem;
-    top: -0.1rem;
+    top: -4.1rem;
     right: 4rem;
     position: absolute;
   }
+  .header__logo img {
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+  }
   .nav__links {
     position: fixed;
+    height: 100%;
     width: 100%;
     background-color: #fff;
     padding-top: 2rem;
@@ -204,6 +214,8 @@ span {
     margin-left: 0;
     padding-left: 5rem;
     padding-bottom: 1rem;
+    z-index: 2;
+    margin-top: 0.02rem;
   }
 }
 .nav__links.nav__open {
@@ -231,9 +243,13 @@ span {
   }
   .header__icon {
     font-size: 3rem;
-    top: -0.1rem;
+    top: -5rem;
     right: 2rem;
     position: absolute;
+  }
+  .header__logo img {
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
   }
   .nav__links {
     position: fixed;
@@ -248,6 +264,7 @@ span {
     padding-left: 5rem;
     padding-bottom: 1rem;
     z-index: 2;
+    margin-top: 0.02rem;
   }
 }
 .nav__links.nav__open {
@@ -523,14 +540,14 @@ span {
 }
 .blocks__desc {
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 6.6rem;
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: #687074;
 }
 .blocks__line {
   width: 7rem;
-  border: 1px solid #555555;
+  border: 1px solid #687074;
   display: inline-block;
   margin-bottom: 30px;
 }
@@ -538,7 +555,7 @@ span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2;
-  color: #333333;
+  color: #687074;
   margin-bottom: 7.5rem;
 }
 .blocks__features {
@@ -547,19 +564,26 @@ span {
 }
 .blocks__features-item h3 {
   font-size: 1.8rem;
-  font-weight: 400;
-  color: #333333;
+  font-weight: 500;
+  color: #687074;
   padding-bottom: 2.5rem;
 }
 .blocks__features-desc {
   font-size: 1.4rem;
   font-weight: 400;
+  color: #687074;
 }
 .blocks__features-text {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   padding-top: 2rem;
   margin-bottom: 6rem;
+  color: #687074;
+}
+.blocks__features-icon {
+  padding-right: 2rem;
+  font-size: 2rem;
+  color: #74c52c;
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -579,6 +603,7 @@ span {
 @media (min-width: 740px) and (max-width: 1023px) {
   .blocks__features {
     flex-direction: column;
+    align-items: center;
   }
   .blocks__features-text {
     margin-bottom: -2rem;
@@ -589,8 +614,8 @@ span {
   }
   .blocks__text {
     margin-bottom: 3rem;
-    width: 90%;
-    padding-left: 3rem;
+    width: 84%;
+    padding-left: 6rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -637,6 +662,7 @@ span {
 .review__title {
   font-size: 2.4rem;
   font-weight: 400;
+  margin-bottom: 1.5rem;
 }
 .review__desc {
   font-size: 1.4rem;
@@ -648,8 +674,8 @@ span {
 
 .review__button .btn--border {
   cursor: pointer;
-  color: #333333;
-  border: 1px solid #333333;
+  color: #687074;
+  border: 1px solid #687074;
   font-size: 1.4rem;
   padding: 1rem 1rem;
   margin-right: 1rem;
@@ -663,6 +689,9 @@ span {
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
+  .review {
+    gap: 0;
+  }
   .review__content {
     width: 40%;
     padding-right: 2rem;
@@ -673,6 +702,10 @@ span {
   }
   .review__map {
     width: 50vw;
+  }
+  .review__img iframe {
+    margin-left: 5rem;
+    width: 450px;
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -691,10 +724,14 @@ span {
   .review__content {
     width: 90%;
     padding-left: 3rem;
-    margin-top: -3rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .review__map {
+    width: 100%;
+  }
+  .review__img iframe {
+    height: 350px;
     width: 100%;
   }
   .review__button .btn--border,
@@ -724,6 +761,9 @@ span {
   .review__map {
     width: 100%;
   }
+  .review__img iframe {
+    width: 100%;
+  }
   .review__button .btn--border,
   .review__button .btn--primary {
     font-size: 1.2rem;
@@ -737,7 +777,7 @@ span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2;
-  color: #333333;
+  color: #687074;
   margin-bottom: 7.5rem;
 }
 .about__desc h3 {
@@ -773,7 +813,7 @@ span {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid #333333;
+  border: 1px solid #687074;
   border-radius: 10px;
   z-index: 10;
   background-color: white;
@@ -842,7 +882,7 @@ span {
     top: 35%;
   }
 }
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 760px) and (max-width: 1023px) {
   .about {
     margin: 5rem 0;
   }
@@ -859,8 +899,14 @@ span {
     margin-bottom: 5rem;
   }
   .about__img img {
-    width: 98%;
+    width: 100%;
     object-fit: cover;
+  }
+  .about .close-button {
+    margin-top: -1rem;
+    margin-right: -55rem;
+    padding: 0.1rem 0.7rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -895,11 +941,17 @@ span {
   .about .close-button {
     margin-top: -2rem;
     margin-right: -28rem;
+    margin-bottom: 1rem;
     padding: 0.1rem 0.7rem;
     font-size: 2rem;
   }
   .about .modal__img img {
     width: 90%;
+  }
+}
+@media (max-width: 375px) {
+  .about .close-button {
+    margin-right: -26rem;
   }
 }
 .statis {
@@ -1154,7 +1206,7 @@ span {
   font-weight: 400;
   margin-top: 6.6rem;
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: #687074;
 }
 .information__line {
   width: 7rem;
@@ -1166,7 +1218,7 @@ span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2;
-  color: #333333;
+  color: #687074;
   margin-bottom: 7.5rem;
 }
 .information__list {
@@ -1176,7 +1228,6 @@ span {
 }
 .information__line {
   width: 7rem;
-  margin-top: 1.5rem;
 }
 .information__content h3 {
   font-size: 1.8rem;
@@ -1200,9 +1251,6 @@ span {
   }
   .information__content p {
     margin-bottom: 3rem;
-  }
-  .information__line {
-    margin-top: 1rem;
   }
   .information__content {
     width: 50%;
@@ -1277,12 +1325,11 @@ span {
   font-size: 2.4rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #333333;
+  color: #687074;
 }
 .article__line {
   width: 7rem;
-  border: 1px solid #555555;
-  margin-top: 2rem;
+  border: 1px solid #687074;
   display: inline-block;
   margin-bottom: 30px;
 }
@@ -1290,7 +1337,7 @@ span {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2;
-  color: #333333;
+  color: #687074;
   margin-bottom: 7.5rem;
 }
 .article__button {
@@ -1302,8 +1349,8 @@ span {
 
 .article__button .btn--border {
   cursor: pointer;
-  color: #333333;
-  border: 1px solid #333333;
+  color: #687074;
+  border: 1px solid #687074;
   font-size: 1.4rem;
   padding: 1rem 1rem;
   margin-right: 1rem;

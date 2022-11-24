@@ -6,6 +6,7 @@
   }
   &__logo {
     cursor: pointer;
+    padding-bottom: 0.5rem;
   }
   &__menu-list {
     display: flex;
@@ -34,13 +35,7 @@
     font-size: 1.5rem;
   }
 }
-// .menu__dropdown-line {
-//   border: 1px solid #74c52c;
-//   margin-left: 2rem;
-//   margin-top: 0.2rem;
-//   text-align: center;
-//   display: none;
-// }
+
 .menu__dropdown ul li:hover a {
   color: #74c52c;
 }
@@ -91,6 +86,10 @@
     &__inner img {
       padding-left: 2rem;
     }
+    &__logo img {
+      padding-left: 2rem;
+      padding-bottom: 0.5rem;
+    }
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -114,13 +113,18 @@
     }
     &__icon {
       font-size: 3rem;
-      top: -0.1rem;
+      top: -4.1rem;
       right: 4rem;
       position: absolute;
+    }
+    &__logo img {
+      padding-left: 2rem;
+      padding-bottom: 0.5rem;
     }
   }
   .nav__links {
     position: fixed;
+    height: 100%;
     width: 100%;
     background-color: #fff;
     padding-top: 2rem;
@@ -130,6 +134,8 @@
     margin-left: 0;
     padding-left: 5rem;
     padding-bottom: 1rem;
+    z-index: 2;
+    margin-top: 0.02rem;
   }
 }
 .nav__links.nav__open {
@@ -157,9 +163,13 @@
     }
     &__icon {
       font-size: 3rem;
-      top: -0.1rem;
+      top: -5rem;
       right: 2rem;
       position: absolute;
+    }
+    &__logo img {
+      padding-left: 2rem;
+      padding-bottom: 0.5rem;
     }
   }
   .nav__links {
@@ -175,6 +185,7 @@
     padding-left: 5rem;
     padding-bottom: 1rem;
     z-index: 2;
+    margin-top: 0.02rem;
   }
 }
 .nav__links.nav__open {
