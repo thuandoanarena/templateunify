@@ -1267,6 +1267,7 @@ span {
   width: 7rem;
   border: 1px solid #8b8b8b;
   display: inline-block;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .information__text {
@@ -1282,7 +1283,8 @@ span {
   text-align: left;
 }
 .information__line {
-  width: 7rem;
+  width: 15%;
+  color: #687074;
 }
 .information__content h3 {
   font-size: 1.8rem;
@@ -1296,6 +1298,39 @@ span {
 .information__content p {
   font-size: 1.1rem;
   margin-top: -2rem;
+}
+.information__icon {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+}
+.information__icon .icon-infor {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 0.8rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+.information__img {
+  position: relative;
+  overflow: hidden;
+}
+.information__img:hover .information__icon {
+  top: 0%;
+  bottom: 2%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.35s ease-in;
+  width: 100%;
+  padding-top: 11rem;
+}
+.information__img:hover .icon-infor:hover {
+  background-color: #428bca;
+}
+.information__content:hover .information__line {
+  width: 100%;
+  border: 1px solid #74c52c;
+  transition: all 0.35s ease-in;
 }
 
 @media (min-width: 1024px) and (max-width: 1366px) {
