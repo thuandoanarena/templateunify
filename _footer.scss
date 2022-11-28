@@ -2,7 +2,7 @@
   background-color: #272727;
   padding-top: 4rem;
   padding-bottom: 8rem;
-  color: #fff;
+  color: #e4e4e4;
   &__main {
     display: flex;
     justify-content: space-between;
@@ -17,24 +17,32 @@
     font-size: 1.4rem;
     padding-top: 2.3rem;
     padding-bottom: 2rem;
+    width: 107%;
   }
   &__logo p {
     font-size: 1.4rem;
+
+    width: 107%;
   }
   &__posts h3 {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
   &__useful h3 {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
   &__contact h3 {
     font-size: 2.2rem;
+    margin-bottom: 0.5rem;
   }
   &__content h4 {
     font-size: 1.4rem;
   }
   &__content p {
     font-size: 1.1rem;
+    color: #7b7b7b;
+    margin-top: 0.2rem;
   }
   &-links {
     font-size: 1.1em;
@@ -44,7 +52,7 @@
   &-info {
     font-size: 1.3em;
     text-decoration: none;
-    color: #fff;
+    color: #e4e4e4;
   }
   &-text {
     margin-top: 2rem;
@@ -58,6 +66,8 @@
   }
   &__desc {
     padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
   }
   &__desc h3 {
     font-size: 1.2rem;
@@ -65,6 +75,34 @@
   &__follow {
     margin-top: 4rem;
     background-color: #222222;
+  }
+  &__line {
+    border: 1px dashed #dadee5;
+    width: 53%;
+    float: right;
+  }
+  &__line-2 {
+    border: 1px solid #74c52c;
+    width: 45%;
+  }
+  &__line-3 {
+    border: 1px solid #353535;
+    margin-top: 1.5rem;
+  }
+  &__posts {
+    width: 22%;
+  }
+  &__useful {
+    width: 22%;
+  }
+  &__contact {
+    width: 22%;
+  }
+  &__follow--icon ion-icon {
+    padding-right: 2rem;
+    font-size: 1.6rem;
+    color: #777777;
+    cursor: pointer;
   }
 }
 @media (min-width: 1024px) and (max-width: 1366px) {
@@ -96,6 +134,15 @@
     &__desc {
       padding-left: 4rem;
     }
+    &__line-2 {
+      display: none;
+    }
+    &__line {
+      display: none;
+    }
+    &__line-3 {
+      display: none;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -117,6 +164,28 @@
     }
     &__desc {
       padding-left: 2rem;
+      display: block;
+    }
+    &__posts {
+      width: 100%;
+    }
+    &__useful {
+      width: 100%;
+    }
+    &__contact {
+      width: 100%;
+    }
+    &__line-2 {
+      display: none;
+    }
+    &__line {
+      display: none;
+    }
+    &__line-3 {
+      display: none;
+    }
+    &__follow--icon ion-icon {
+      margin-top: 2rem;
     }
   }
 }
