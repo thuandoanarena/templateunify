@@ -102,6 +102,7 @@
     }
   }
 }
+
 @media (min-width: 1440px) {
   .banner {
     &__content {
@@ -234,6 +235,7 @@
     }
   }
 }
+
 @media (max-width: 796px) {
   .banner {
     &__content {
@@ -276,6 +278,42 @@
   .banner {
     &__content {
       margin-left: 3.85%;
+    }
+  }
+}
+@media (min-width: 1000px) and (max-width: 1023px) {
+  .banner {
+    &__content {
+      margin-left: 3.2%;
+    }
+  }
+}
+
+@media (min-width: 938px) and (max-width: 998px) {
+  .banner {
+    &__content {
+      margin-left: 2.9%;
+    }
+  }
+}
+@media (min-width: 880px) and (max-width: 937px) {
+  .banner {
+    &__content {
+      margin-left: 2.65%;
+    }
+  }
+}
+@media (min-width: 820px) and (max-width: 879px) {
+  .banner {
+    &__content {
+      margin-left: 2.65%;
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1160px) {
+  .banner {
+    &__content {
+      margin-left: 0.8%;
     }
   }
 }

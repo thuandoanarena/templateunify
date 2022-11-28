@@ -28,7 +28,6 @@
     text-align: left;
   }
   &__line {
-    width: 15%;
     color: #687074;
   }
   &__content h3 {
@@ -98,6 +97,15 @@
     &__text {
       margin-bottom: 5rem;
     }
+    &__img:hover .information__icon {
+      padding-top: 20rem;
+      bottom: 1%;
+      width: 80%;
+      left: 10%;
+    }
+    &__content:hover .information__line {
+      width: 80%;
+    }
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -153,6 +161,41 @@
     }
     &__content {
       margin-bottom: 4rem;
+    }
+    &__img:hover .information__icon {
+      padding-top: 12rem;
+      bottom: 1%;
+      width: 64%;
+      left: 18%;
+    }
+    &__content:hover .information__line {
+      width: 63%;
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .information {
+    &__img:hover .information__icon {
+      padding-top: 12rem;
+      bottom: 1%;
+      width: 68%;
+      left: 16%;
+    }
+    &__content:hover .information__line {
+      width: 65%;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .information {
+    &__img:hover .information__icon {
+      padding-top: 12rem;
+      bottom: 1%;
+      width: 70%;
+      left: 15%;
+    }
+    &__content:hover .information__line {
+      width: 68%;
     }
   }
 }
