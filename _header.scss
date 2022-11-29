@@ -15,6 +15,7 @@
   &__menu-item {
     padding-right: 3rem;
     text-decoration: none;
+    cursor: pointer;
   }
   &__menu-item:hover &__menu-link {
     color: #74c52c;
