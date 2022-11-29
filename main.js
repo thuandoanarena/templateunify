@@ -126,11 +126,15 @@ $(document).ready(function () {
 const openModalButtons = document.querySelectorAll("[data-modal-target]");
 const closeModalButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");
+const unifyPr = document.querySelector(".uinfy");
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.querySelector(button.dataset.modalTarget);
     openModal(modal);
+
+    // overlay body
+    unifyPr.classList.add("overlay-bg");
   });
 });
 
@@ -144,6 +148,12 @@ overlay.addEventListener("click", () => {
 closeModalButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = button.closest(".modal");
+    console.log(unifyPr.classList.contains("overlay-bg"));
+
+    if (unifyPr.classList.contains("overlay-bg")) {
+      unifyPr.classList.remove("overlay-bg");
+    }
+
     closeModal(modal);
   });
 });
@@ -159,6 +169,7 @@ function closeModal(modal) {
   modal.classList.remove("active");
   overlay.classList.remove("active");
 }
+
 // parallax
 let heading = $("#heading");
 
