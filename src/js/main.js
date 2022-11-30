@@ -235,4 +235,4 @@ layer.mouseout(function (e) {
   button3.css("transform", "translate3d(none)");
 });
 
-console.log("abc");
+
