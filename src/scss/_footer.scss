@@ -114,6 +114,9 @@
     &__desc {
       padding-left: 5rem;
     }
+    &__logo {
+      width: 16rem;
+    }
   }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
@@ -134,11 +137,23 @@
     &__desc {
       padding-left: 4rem;
     }
-    &__line-2 {
-      display: none;
+    &__logo {
+      width: 100%;
+    }
+    &__posts {
+      width: 100%;
+    }
+    &__useful {
+      width: 100%;
+    }
+    &__contact {
+      width: 100%;
     }
     &__line {
       display: none;
+    }
+    &__line-2 {
+      width: 17%;
     }
     &__line-3 {
       display: none;

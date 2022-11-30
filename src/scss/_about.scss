@@ -108,6 +108,9 @@
     &__content p {
       margin-bottom: 4rem;
     }
+    &__content h4 {
+      width: 87%;
+    }
     &__text {
       width: 80%;
       padding-left: 8rem;
@@ -121,26 +124,35 @@
   .about {
     margin: 5rem 0;
     &__text {
-      width: 95%;
-      padding-left: 2rem;
+      width: 90%;
+      padding-left: 4rem;
       margin-bottom: 4rem;
     }
     &__item {
-      display: block;
-      padding-left: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+      text-align: center;
+      margin-bottom: -5rem;
     }
     &__info {
       margin-bottom: 5rem;
     }
+    &__content h4 {
+      width: 70%;
+      padding-left: 11rem;
+    }
+    &__content {
+      text-align: center;
+    }
     &__img img {
-      width: 100%;
+      width: 70%;
       object-fit: cover;
     }
     .close-button {
       margin-top: -1rem;
       margin-right: -55rem;
       padding: 0.1rem 0.7rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
   }
 }
@@ -196,16 +208,6 @@
 @media (min-width: 834px) {
   .about .close-button {
     margin-right: -61rem;
-  }
-}
-@media (min-width: 696px) {
-  .about .close-button {
-    margin-right: -50rem;
-  }
-}
-@media (min-width: 664px) {
-  .about .close-button {
-    margin-right: -48rem;
   }
 }
 @media (min-width: 1024px) {
