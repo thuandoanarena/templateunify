@@ -234,5 +234,3 @@ layer.mouseout(function (e) {
   desc3.css("transform", "translate3d(none)");
   button3.css("transform", "translate3d(none)");
 });
-
-console.log("ab");
