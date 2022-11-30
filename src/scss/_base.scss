@@ -187,12 +187,17 @@ span {
   pointer-events: auto;
   opacity: 1;
 }
+@media (min-width: 740px) and (max-width: 1023px) {
+  .to-top {
+    margin-right: 3rem;
+  }
+}
 @media screen and (max-width: 767px) {
   .to-top {
-    width: 45px;
-    height: 45px;
-    font-size: 2.5rem;
-    margin-right: -2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2.2rem;
+    margin-right: -1.5rem;
   }
 }
 

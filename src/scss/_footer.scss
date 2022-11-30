@@ -191,7 +191,7 @@
       width: 100%;
     }
     &__line-2 {
-      display: none;
+      width: 30%;
     }
     &__line {
       display: none;
@@ -201,6 +201,9 @@
     }
     &__follow--icon ion-icon {
       margin-top: 2rem;
+    }
+    &__logo {
+      width: 95%;
     }
   }
 }
