@@ -137,7 +137,10 @@
     padding-left: 5rem;
     padding-bottom: 1rem;
     z-index: 999;
-    margin-top: 0.02rem;
+    margin-top: -0.1rem;
+  }
+  .sticky .header__icon {
+    margin-right: 3rem;
   }
 }
 .nav__links.nav__open {

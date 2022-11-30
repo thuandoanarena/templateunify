@@ -118,13 +118,16 @@
     &__list {
       flex-wrap: wrap;
       text-align: center;
-      gap: 0;
-      margin-left: 1.1rem;
+      gap: 1rem;
+      margin-left: 13rem;
     }
     &__content p {
       width: 75%;
       padding-left: 4.3rem;
       margin-bottom: 3rem;
+    }
+    &__content {
+      width: 40%;
     }
     &__line {
       margin-top: 1rem;
@@ -141,7 +144,7 @@
       margin-left: 3rem;
     }
     &__img:hover .information__icon {
-      padding-top: 15rem;
+      padding-top: 11rem;
       bottom: 1%;
       width: 90%;
       left: 5%;
