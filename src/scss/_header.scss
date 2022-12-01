@@ -76,6 +76,10 @@
   padding-top: 1.4rem;
   padding-right: 3rem;
 }
+.nav__links.nav__open {
+  transform: translateX(0);
+  opacity: 1;
+}
 @media (min-width: 1024px) {
   .header {
     &__icon {
@@ -116,7 +120,7 @@
     &__icon {
       font-size: 3rem;
       top: -4.1rem;
-      right: 4rem;
+      right: 1rem;
       position: absolute;
     }
     &__logo img {
@@ -142,11 +146,11 @@
   .sticky .header__icon {
     margin-right: 3rem;
   }
+  .sticky {
+    width: 97%;
+  }
 }
-.nav__links.nav__open {
-  transform: translateX(0);
-  opacity: 1;
-}
+
 @media screen and (max-width: 767px) {
   .header {
     &__inner {

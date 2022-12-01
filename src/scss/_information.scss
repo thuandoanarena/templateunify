@@ -152,6 +152,9 @@
     &__content:hover .information__line {
       width: 90%;
     }
+    &__icon {
+      bottom: -5rem;
+    }
   }
 }
 @media screen and (max-width: 767px) {
